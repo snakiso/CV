@@ -1,0 +1,48 @@
+.tr-delay-1
+ transition-delay: .2s
+.tr-delay-2
+ transition-delay: .4s
+.tr-delay-3
+ transition-delay: .6s
+.tr-delay-4
+ transition-delay: .8s
+.tr-delay-5
+ transition-delay: 1s
+.tr-delay-6
+ transition-delay: 1.2s
+.tr-delay-7
+ transition-delay: 1.4s
+.tr-delay-8
+ transition-delay: 1.6s
+.tr-delay-9
+ transition-delay: 1.8s        
+.slide-left
+ transform: translateX(-30px)
+ opacity: 0
+ transition: all 1s
+.slide-left.animated
+  transform: translateX(0px)
+  opacity: 1
+.slide-right
+ transform: translateX(30px)
+ opacity: 0
+ transition: all 1s
+.slide-right.animated
+ transform: translateX(0px)
+ opacity: 1 
+.slide-up
+ transform: translateY(30px)
+ opacity: 0
+ transition: all 1s
+.slide-up.animated
+ transform: translateY(0px)
+ opacity: 1   
+.slide-progress
+ animation-name: slide-progress
+ animation-duration: 4s
+ animation-timing-function: cubic-bezier(0.225, 1, 0.316, 0.99) 
+@keyframes slide-progress
+ 0%
+  transform: translateX(-100%)
+ 100%
+  transform: translateX(0) 

@@ -1,0 +1,90 @@
+.portfolio
+ background:  rgba(22, 22, 22, 1)
+ position: relative
+ &__alex, &__project, &__pear
+  min-height: 100vh
+  background:  rgba(22, 22, 22, 1)
+  margin: auto
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  position: relative
+ &__alex
+  min-height: calc(100vh - 150px)
+ h2
+  color: rgba(34, 36, 38, 1)
+  font-weight: 900
+  font-size: 80px
+  max-width: 1550px
+  margin: 0 auto
+  padding-top: 50px
+ &__box
+  background: rgba(34, 36, 38, 1)
+  max-width: 1550px
+  height: 580px
+  width: 100% 
+  display: flex
+  overflow: hidden
+ &__img
+  flex-basis: 50%
+  transition: all .5s
+  transform-origin: left
+  position: relative
+  z-index: 2
+  max-width: 50%
+  img
+    width: 100%
+    height: 100%
+    transition: .5s
+  .button-box
+    position: absolute
+    bottom: -100px
+    left: 50%
+    transform: translateX(-50%)
+    transition: 1s
+ &__box:hover
+  .button-box
+    bottom: 40px 
+  img
+    opacity: 0.6      
+ &__content
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+  flex: 1
+  transition: all .5s
+  max-width: 50%
+  flex-basis: 50%
+  overflow: hidden
+ &__text
+  padding-left: 60px
+  h4
+   font-weight: 100  
+   font-size: 60px
+   max-width: 405px
+  p
+   max-width: 405px
+   font-size: 25px
+   font-weight: 300 
+ &__bg
+  left: -120px
+  z-index: 0
+  position: absolute
+  font-size: 500px
+  bottom: 20px
+  width: 545px
+  height: 510px
+  color: rgba(255, 255, 255, 0.025)
+  user-select: none
+ &__pear
+  background: rgba(34, 36, 38, 1)
+  .portfolio__box
+   background: rgba(22, 22, 22, 1)
+   flex-direction: row-reverse
+ &__top-decor,&__middle-decor,&__bottom-decor
+  position: absolute
+  max-height: 85px
+  top: 0
+ 

@@ -1,0 +1,146 @@
+.about
+ min-height: 100vh
+ position: relative
+ overflow-y: hidden
+ &__content
+  max-height: 100vh
+  position: relative
+  display: flex
+  flex-direction: column
+  overflow-x: hidden
+  overflow-y: hidden
+  align-items: center
+  p
+   max-width: 410px
+   font-size: 30px
+   font-weight: 100
+  h4
+   margin: 0
+   font-size: 40px
+   color: rgba(255, 208, 0, 1) 
+   font-weight: 400
+   text-transform: uppercase
+   display: flex
+   img
+    max-height: 45px
+  .first-line
+   background: #222426
+   width: 100%
+   height: 50vh
+   display: flex
+   padding-left: 80%
+   column-gap: 200px
+  .first-line, .second-line 
+   .about-block
+    position: relative
+    max-height: 360px
+    margin-top: 5%
+   .about-block:before
+    content: ""
+    height: 100%
+    width: 2px
+    background: rgba(255, 208, 0, 1)
+    position: absolute
+    left: -30px
+    top: 0
+    transform: scaleY(0)
+    transform-origin: top
+    transition: 1s
+  .second-line
+   background: #2A2E32
+   width: 100%
+   height: 50vh 
+   display: flex
+   padding-left: 80%
+   column-gap: 200px
+   div
+    max-height: 280px
+    margin-top: 6%
+   .lang__wrapper
+    margin-top: 0 
+   .lang-block
+    margin-top: 0 
+   .points-block 
+    margin-top: 0
+    margin-left: 40px
+    p
+     display: flex
+     margin: 30px 0
+     height: 37px
+     align-items: center
+    span
+     display: block
+     content: ''
+     width: 20px
+     height: 20px
+     background: rgba(255, 208, 0, 0.3)
+     border-radius: 10px
+     margin: 0 10px
+    .active-point
+     background: rgba(255, 208, 0, 1) 
+   .lang__wrapper
+    display: flex  
+ &__ava
+  position: absolute
+  max-height: 100vh
+  display: flex
+  width: 1550px
+ &__bg
+  width: 260px
+  height: 100vh
+  background: rgba(255, 208, 0, 1)
+  .nickname
+   margin-top: 20px 
+   margin-left: 35px 
+   display: flex
+   flex-direction: column
+   max-width: 60px
+   p
+    font-size: 100px
+    color: rgba(34, 36, 38, 1)
+    font-weight: 100
+    margin: 0
+    line-height: 125px
+ &__photo
+  position: absolute
+  z-index: 2
+  height: 100vh
+  left: 5%
+  max-width: 370px
+  img
+   height: 100% 
+   width: 100%
+ &__decor
+  max-height: 85px
+  position: absolute
+  bottom: 0 
+  z-index: 2   
+@media screen and ( max-width: 1920px )
+  .about
+    &__content
+      h4
+       font-size: 30px
+       img
+        height: 32px
+      p
+       font-size: 20px 
+       max-width: 320px
+      .first-line, .second-line
+       column-gap: 100px
+       padding-left: 90%
+       .about-block
+        max-height: 230px
+      .second-line
+       .points-block
+        p
+         height: 24px
+         margin: 20px 0  
+
+@media screen and ( max-width: 1500px )  
+  .about__ava
+    width: 1200px
+  .first-line, .second-line
+    padding-left: 70% !important 
+@media screen and ( max-width: 1200px )               
+
+

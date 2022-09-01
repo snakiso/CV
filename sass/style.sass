@@ -1,0 +1,78 @@
+html
+ overflow-x: hidden
+ scroll-behavior: smooth
+body
+ overflow-x: hidden
+ margin: 0
+ font-family: 'Montserrat', sans-serif
+.loader:before
+ content: ''
+ position: fixed
+ width: 100%
+ height: 100%
+ top: 0
+ z-index: 99
+ transition: 1s cubic-bezier(.858, .01, .068, .99)
+ background: #161616
+ left: 100%
+ transform: translateX(-100%)
+ visibility: visible
+.loader.load:before 
+ transform: translateX(0%)
+ visibility: hidden
+.loader.load .loading
+ visibility: hidden
+ opacity: 0
+.loading
+ visibility: visible
+ position: fixed
+ z-index: 100
+ left: 50%
+ top: 50%
+ transform: translate(-50%, -50%)
+ transition: .5s cubic-bezier(.76, .06, .85, .07)
+ width: 100px
+ height: 100px
+ img
+  position: absolute
+  width: 70px
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+.loading:before
+ content: ''
+ width: 100%
+ height: 100%
+ border-radius: 50%
+ border: 2px solid #161616
+ border-left-color: rgba(255, 208, 0, 1)
+ display: block
+ animation: 1.2s loading-anim cubic-bezier(.767, .01, .18, 1.01) infinite both
+@keyframes loading-anim
+ 0%
+  -webkit-transform: rotate(0deg)
+  transform: rotate(0deg)
+ 100%
+  -webkit-transform: rotate(360deg)
+  transform: rotate(360deg)
+.page-wrapper
+ background: #1E1E1E
+ min-height: 100vh
+ width: 100%
+ color: white
+a
+ color: white
+ text-decoration: none
+ul
+ list-style: none
+ padding: 0
+@import 'header'
+@import 'preview'
+@import 'scene'
+@import 'about'
+@import 'skill'
+@import 'portfolio'
+@import 'code'
+@import 'contacts'
+@import 'footer'
+@import 'animations'

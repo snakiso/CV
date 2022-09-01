@@ -1,0 +1,52 @@
+.preview
+  position: relative
+  min-height: 100vh
+  &__block
+    max-width: 1265px
+    margin-left: 16%
+    position: absolute
+    top: 25%
+    h3
+      font-size: 71px
+      font-weight: 200
+      margin: 0
+      span
+        background: rgba(255, 208, 0, 1)
+        color: #1E1E1E
+        font-weight: 300
+        padding: 0 15px
+    p
+      font-size: 40px
+      font-weight: 100
+.button-box
+  position: relative 
+  display: inline-block
+  button
+    color: white
+    border: none
+    border-radius: 24px
+    background: rgba(34, 36, 38, 1)
+    width: 260px
+    height: 50px
+    transition: all .5s
+    font-size: 18px
+    font-family: 'Montserrat', sans-serif
+    font-weight: 500
+    cursor: pointer
+.button-box:hover
+  button
+   background: rgba(255, 208, 0, 1)
+   color: rgba(34, 36, 38, 1)   
+
+@media screen and ( max-width: 1200px ) 
+  .preview
+    display: flex
+    justify-content: center
+    &__block
+      max-width: calc( 100% - 80px)
+      margin: 0 auto 0 auto 
+      h3
+        font-size: 36px      
+        max-width: 400px
+      p
+        font-size: 28px    

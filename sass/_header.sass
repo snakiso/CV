@@ -1,0 +1,43 @@
+.fixed-header
+ width: 100%
+ position: fixed
+ padding-top: 20px
+ z-index: 20
+ height: 100px
+ &__wrapper
+  width: calc( 100% - 80px )
+  margin: auto
+  display: flex
+  justify-content: space-between
+  align-items: center
+ &__logo
+  height: 50px 
+ &__nav
+  max-width: 710px
+  flex: 1 
+  .nav-list
+   display: flex
+   justify-content: space-between
+   align-items: center
+   li
+    a
+     font-size: 18px
+     font-weight: 400
+   .active
+    filter: invert(67%) sepia(90%) saturate(922%) hue-rotate(382deg) brightness(183%) contrast(116%)
+    a
+     font-size: 25px !important
+     font-weight: 700 !important
+    img
+     width: 40px
+     height: 40px
+   li:hover
+    filter: invert(67%) sepia(90%) saturate(922%) hue-rotate(382deg) brightness(183%) contrast(116%) 
+.headroom 
+ transition: transform .3s cubic-bezier(.76, .06, .85, .07)
+ will-change: transform
+.headroom--pinned 
+ display: block
+ transform: translateY(0%)
+.headroom--unpinned 
+ transform: translateY(-100%)    

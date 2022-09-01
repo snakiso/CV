@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <title>SnaKiso</title>
+</head>
+
+<body class="loader">
+  <div class="loading">
+    <img src="./img/loader.svg" alt="">
+  </div>
+  <div class="page-wrapper">
+    <header class="fixed-header">
+      <div class="fixed-header__wrapper">
+        <div class="header-logo">
+          <img src="./img/logo.svg" alt="">
+        </div>
+        <nav class='fixed-header__nav'>
+          <ul class="nav-list">
+            <li class="list-item active"><a href="#preview"><img src="./img/home.svg" alt=""></a></li>
+            <li class="list-item"><a href="#about">ABOUT</a></li>
+            <li class="list-item"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="list-item"><a href="#code">CODE</a></li>
+            <li class="list-item"><a href="#contacts">CONTACTS</a></li>
+            <li class="list-item"><a href="tel:+375333908447"><img src="./img/phone.svg" alt=""></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="preview" id="preview">
+      <div id="scene">
+        <div data-depth="0.2"><img src="./img/bg-1.png" alt=""></div>
+        <div data-depth="0.6"><img src="./img/bg-2.png" alt=""></div>
+        <div data-depth="1"><img src="./img/bg-3.png" alt=""></div>
+      </div>
+      <div class="preview__block">
+        <h3>Hi! I'm Ivan, a <span>frontend developer.</span> The motto in life: I see a goal - I go to the goal and no
+          matter how far it is.</h3>
+        <p>Based in Soligorsk & Belarus</p>
+        <a href="#about" class="button-box">
+          <button>MORE ABOUT IVAN</button>
+        </a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about__content">
+          <div class="about__ava">
+            <div class="about__bg">
+              <div data-animation-container class="nickname" data-animation-start>
+                <p data-animation-child class="slide-left">S</p>
+                <p data-animation-child class="slide-right">n</p>
+                <p data-animation-child class="slide-left">a</p>
+                <p data-animation-child class="slide-right ">K</p>
+                <p data-animation-child class="slide-left">i</p>
+                <p data-animation-child class="slide-right">s</p>
+                <p data-animation-child class="slide-left">o</p>
+              </div>
+            </div>
+            <div class="about__photo">
+              <img src="./img/ava.png" alt="">
+            </div>
+          </div>
+        <div class="first-line">
+          <div data-animation-container class="about-block">
+            <h4 data-animation-child class="slide-left">ABOU<img src="./img/about-letter.svg" alt="">&nbsp ME</h4>
+            <p data-animation-child class="slide-up">I am 25 years old, until recently I worked at a factory, but after trying myself in web development, I
+              realized
+              that it
+              was necessary to move in this direction.</p>
+          </div>
+          <div data-animation-container class="about-block">
+            <h4 data-animation-child class="slide-left">E<img src="./img/education-letter.svg" alt="">UCATION</h4>
+            <p data-animation-child class="slide-up">From education, only self-study and paid courses (insert)</p>
+          </div>
+        </div>
+        <div class="second-line">
+          <div data-animation-container class="about-block">
+            <h4 data-animation-child class="slide-left">H<img src="./img/hobby-letter.svg" alt="">BBY</h4>
+            <p data-animation-child class="slide-up">At the moment, this is my hobby, and Dota 2 and manga are waiting for me in the breaks</p>
+          </div>
+          <div data-animation-container class="about-block">
+            <h4 data-animation-child class="slide-left">L<img src="./img/languages-letter.svg" alt="">NGUAGES</h4>
+            <div data-animation-child class="lang__wrapper slide-up">
+              <div class="lang-block">
+                <p>Russian</p>
+                <p>Belarusian</p>
+                <p>English</p>
+              </div>
+              <div class="points-block">
+                <p>
+                  <span class="active-point"></span>
+                  <span class="active-point"></span>
+                  <span class="active-point"></span>
+                  <span class="active-point"></span>
+                  <span></span>
+                </p>
+                <p>
+                  <span class="active-point"></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </p>
+                <p>
+                  <span class="active-point"></span>
+                  <span class="active-point"></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about__decor">
+          <img src="./img/about-decor.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="skills__wrapper">
+        <h2>Skillset</h2>
+        <div class="skills__block">
+          <div data-animation-container class="skill-box">
+            <div class="skill-name"><p>HTML</p></div>
+            <div class="skills__progress-zero" data-progress="80%">
+              <div data-animation-child class="skills__progress-full" data-animation="slide-progress"></div>
+            </div>
+          </div>
+          <div data-animation-container class="skill-box">
+            <div class="skill-name">
+              <p>CSS</p>
+            </div>
+            <div class="skills__progress-zero" data-progress="62%">
+              <div data-animation-child class="skills__progress-full" data-animation="slide-progress"></div>
+            </div>
+          </div>
+          <div data-animation-container class="skill-box">
+            <div class="skill-name">
+              <p>JS BASICS</p>
+            </div>
+            <div class="skills__progress-zero " data-progress="41%">
+              <div data-animation-child class="skills__progress-full" data-animation="slide-progress"></div>
+            </div>
+          </div>
+          <div data-animation-container class="skill-box">
+            <div class="skill-name">
+              <p>FIGMA</p>
+            </div>
+            <div class="skills__progress-zero" data-progress="47%">
+             <div data-animation-child class="skills__progress-full" data-animation="slide-progress"></div>
+            </div>
+          </div>
+          <div data-animation-container class="skill-box">
+            <div class="skill-name">
+              <p>GITHUB</p>
+            </div>
+            <div class="skills__progress-zero" data-progress="23%">
+              <div data-animation-child class="skills__progress-full" data-animation="slide-progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__top-decor">
+        <img src="./img/portfolio-top-decor.png" alt="">
+      </div>
+      <h2>My Projects</h2>
+      <div class="portfolio__alex">
+        <div class="portfolio__box">
+          <div class="portfolio__img">
+            <img src="./img/alexa-1.png" alt="">
+            <a href="https://rolling-scopes-school.github.io/snakiso-JSFEPRESCHOOL/portfolio/" class="button-box" target="_blank"><button>View Work</button></a>
+          </div>
+          <div class="portfolio__content">
+            <div class="portfolio__text">
+              <h4>ALEXA RISE</h4>
+              <p>My first job, in mastering HTML
+                and CSS, outside of courses.
+                It contains only the layout.</p>
+            </div>
+            <div class="portfolio__bg">01</div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__pear">
+        <div class="portfolio__middle-decor">
+          <img src="./img/portfolio-middle-decor.png" alt="">
+        </div>
+        <div class="portfolio__box">
+          <div class="portfolio__img">
+            <img src="./img/pear-1.png" alt="">
+            <a href="https://snakiso.github.io/PEARAGENCY/" class="button-box" target="_blank"><button>View Work</button></a>
+          </div>
+          <div class="portfolio__content">
+            <div class="portfolio__text">
+              <h4>PEAR AGENCY</h4>
+              <p>My first job, in mastering HTML
+                and CSS, outside of courses.
+                It contains only the layout.</p>
+            </div>
+            <div class="portfolio__bg">02</div>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__project">
+        <div class="portfolio__bottom-decor">
+          <img src="./img/portfolio-bottom-decor.png" alt=""> 
+        </div>
+        <div class="portfolio__box">
+          <div class="portfolio__img">
+            <img src="./img/project -1.png" alt="">
+            <a href="https://snakiso.github.io/PROJECTROOM/index.html" class="button-box" target="_blank"><button>View Work</button></a>
+          </div>
+          <div class="portfolio__content">
+            <div class="portfolio__text">
+              <h4>PROJECTROOM</h4>
+              <p>My first job, in mastering HTML
+                and CSS, outside of courses.
+                It contains only the layout.</p>
+            </div>
+            <div class="portfolio__bg">03</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="code" id="code">
+      <div class="code__wrapper">
+        <h2><span>Code</span><br> example</h2>
+        <div class="code__box">
+          <pre>
+          //Number Animations
+          <span class="name">let</span> benefitsArr = ['.benefits__number', '.benefits__number1', '.benefits__number2']
+          <span class="name">let</span> numbers = <span class="dom">document</span>.<span class="methods">querySelectorAll</span>(benefitsArr)
+          <span class="name">let</span> numberBlock = <span class="dom">document</span>.<span class="methods">querySelector</span>('.experiencies__item-img')
+          
+          for (let i = 0; i < benefitsArr.length; i++){ 
+            $(<span class="dom">window</span>).<span class="methods">ready</span>(function () { 
+              <span class="name">let</span> show=true;
+              <span class="name">let</span> countbox=benefitsArr[i]; 
+              $(<span class="dom">window</span>).<span class="methods">on</span>("scroll load resize", function () { 
+                if (!show) return false; 
+                <span class="name">let</span> b_height=$(numberBlock).<span class="methods">outerHeight</span>()  
+                <span class="name">let</span> w_height=$(<span class="dom">window</span>).<span class="methods">height</span>();
+                if (numbers[i].getBoundingClientRect().top <=((w_height / 2) + (b_height / 2))) { 
+                  $(benefitsArr[i]).css('opacity', '1' ); 
+                  $(benefitsArr[i]).spincrement({ 
+                    thousandSeparator: "" ,
+                     duration: 5000 
+                    }); 
+                    show=false; 
+                  } 
+                }); 
+              }); 
+            }
+
+
+          //Button To top
+          <span class="name">let</span> buttonToTop = <span class="dom">document</span>.<span class="methods">querySelector</span>('.to-top-button')
+          <span class="name">let</span> sections = <span class="dom">document</span>.<span class="methods">getElementsByTagName</span>('section')
+          <span class="name">let</span> check = <span class="dom">document</span>.<span class="methods">querySelectorAll</span>('.experiencies__item') // высота экрана деленная на 2
+          <span class="name">let</span> check2 = <span class="dom">document</span>.<span class="methods">querySelector</span>('.benefits__number')
+          <span class="dom">window</span>.<span class="methods">addEventListener</span>('scroll', () => {
+          screenHeight = <span class="dom">window</span>.<span class="methods">innerHeight</span>
+          if (sections[0].<span class="methods">getBoundingClientRect</span>().<span class="methods">top</span> < -(screenHeight)) {
+           buttonToTop.style.visibility = 'visible'
+          } else {
+            buttonToTop.style.visibility = 'hidden'
+          }
+          })
+          buttonToTop.<span class="methods">addEventListener</span>('click', () => <span class="dom">window</span>.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+          }))
+        </pre>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="contacts__wrapper">
+        <h2>Contacts</h2>
+        <h4>Let's do something impressive.
+        Contact me at <a href="">@snakiso</a></h4>
+        <ul>
+          <li><a href="#"><img src="./img/insta.svg" alt=""></a></li>
+          <li><a href="#"><img src="./img/vk.svg" alt=""></a></li>
+          <li><a href="#"><img src="./img/telega.svg" alt=""></a></li>
+          <li><a href="#"><img src="./img/discord.svg" alt=""></a></li>
+          <li><a href="#"><img src="./img/github.svg" alt=""></a></li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="my-logo">
+          <a href="#"><img src="./img/logo.svg" alt=""></a>
+        </div>
+        <div class="design">
+         <a href="#">Design by Lina 2022</a> 
+        </div>
+        <div class="rs-school-logo">
+          <a href="#"><img src="./img/rs-school.svg" alt=""></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./jQuery2.2.0.js"></script>
+  <script src="./ScrollAnimations.js"></script>
+  <script src="./Headroom.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

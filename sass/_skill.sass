@@ -1,0 +1,47 @@
+.skills
+  min-height: 100vh
+  background: rgba(34, 36, 38, 1)
+  &__wrapper
+    max-width: 1550px
+    margin: auto
+    h2
+      font-size: 80px
+      color: rgba(46, 48, 50, 1)
+      font-weight: 900
+      margin: 0
+      padding-top: 100px
+  &__block
+    display: flex
+    column-gap: 50px
+    padding-top: 100px
+    flex-direction: column
+    .skill-name
+      font-size: 45px
+      color: rgba(74, 74, 74, 1)
+      font-weight: 800
+    p
+      width: 300px
+      height: 40px
+      margin: 25px 0
+  .skill-box
+    display: flex
+    align-items: center
+  &__progress-zero
+    position: relative
+    overflow: hidden
+    height: 40px
+    border-radius: 20px
+    margin-top: 6px
+    background: rgba(255, 208, 0, 0.3)
+    width: 100%
+  &__progress-full
+    position: absolute
+    left: 0
+    top: 0
+    opacity: 0
+    z-index: 2
+    height: 40px
+    background: rgba(255, 208, 0)
+    border-radius: 20px
+  &__progress-full.animated
+    opacity: 1  
