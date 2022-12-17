@@ -188,6 +188,42 @@ ul {
           transform: translateY(-100%);
 }
 
+.burger-box {
+  display: contents;
+  height: 40px;
+  width: 40px;
+}
+
+.burger {
+  width: 40px;
+  height: 3px;
+  content: "";
+  right: 40px;
+  position: absolute;
+  background: white;
+}
+
+.burger:before, .burger:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: white;
+}
+
+.burger:before {
+  top: -10px;
+}
+
+.burger:after {
+  top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .fixed-header__nav {
+    display: none;
+  }
+}
 .preview {
   position: relative;
   min-height: 100vh;
@@ -195,6 +231,7 @@ ul {
 .preview__block {
   max-width: 1265px;
   margin-left: 16%;
+  padding-right: 20px;
   position: absolute;
   top: 25%;
 }
@@ -238,6 +275,11 @@ ul {
   color: rgb(34, 36, 38);
 }
 
+@media screen and (max-width: 1500px) {
+  .preview__block {
+    margin-left: 5%;
+  }
+}
 @media screen and (max-width: 1200px) {
   .preview {
     display: -webkit-box;
@@ -257,6 +299,14 @@ ul {
   }
   .preview__block p {
     font-size: 28px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #scene {
+    display: none;
+  }
+  .preview__block h3 {
+    font-size: 24px;
   }
 }
 #scene {
@@ -397,7 +447,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1550px;
+  width: 90%;
 }
 .about__bg {
   width: 260px;
@@ -432,7 +482,7 @@ ul {
 }
 .about__photo img {
   height: 100%;
-  width: 100%;
+  width: 150%;
 }
 .about__decor {
   max-height: 85px;
@@ -465,13 +515,72 @@ ul {
     height: 24px;
     margin: 20px 0;
   }
+  .about__photo img {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 1500px) {
   .about__ava {
-    width: 1200px;
+    width: 93%;
   }
   .first-line, .second-line {
     padding-left: 70% !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about__bg .nickname p {
+    font-size: 60px;
+    line-height: 140%;
+  }
+  .about__content {
+    max-height: none;
+  }
+  .about__decor {
+    display: none;
+  }
+  .about__ava {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .about__photo {
+    left: auto;
+    right: 20%;
+  }
+  .first-line, .second-line {
+    -webkit-column-gap: 0 !important;
+       -moz-column-gap: 0 !important;
+            column-gap: 0 !important;
+    -ms-flex-pack: distribute !important;
+        justify-content: space-around !important;
+    padding: 0 !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .first-line, .second-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 60px !important;
+  }
+  .about__ava {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .about__photo {
+    left: 15%;
+    right: auto;
+  }
+  .about__content h4 {
+    font-size: 24px;
+  }
+  .about__content p {
+    font-size: 14px;
+    margin: 25px 0;
+    max-width: 280px;
   }
 }
 .skills {
@@ -543,6 +652,29 @@ ul {
   opacity: 1;
 }
 
+@media screen and (max-width: 1500px) {
+  .skills__wrapper {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .skills__wrapper h2 {
+    font-size: 48px;
+  }
+  .skills__block .skill-name {
+    font-size: 24px;
+  }
+  .skills__block p {
+    width: 150px;
+    height: 25px;
+  }
+  .skills__progress-zero {
+    height: 25px;
+  }
+  .skills__progress-full {
+    height: 25px;
+  }
+}
 .portfolio {
   background: rgb(22, 22, 22);
   position: relative;
@@ -684,6 +816,54 @@ ul {
   top: 0;
 }
 
+@media screen and (max-width: 1200px) {
+  .portfolio h2 {
+    padding-left: 20px;
+  }
+  .portfolio__box:hover .button-box {
+    top: 220px;
+  }
+  .portfolio__box {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    max-width: 300px !important;
+  }
+  .portfolio__img {
+    height: 220px;
+    max-width: none;
+  }
+  .portfolio__img .button-box {
+    bottom: auto;
+    top: -70px;
+  }
+  .portfolio__content {
+    max-width: none;
+  }
+  .portfolio__text {
+    padding-left: 10px;
+  }
+  .portfolio__text h4 {
+    font-size: 20px;
+  }
+  .portfolio__text p {
+    font-size: 14px;
+  }
+  .portfolio__bg {
+    font-size: 140px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: -45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .portfolio h2 {
+    padding-left: 20px;
+    font-size: 48px;
+  }
+}
 .code {
   min-height: 100vh;
   background: rgb(34, 36, 38);
@@ -705,6 +885,7 @@ ul {
   letter-spacing: 0;
 }
 .code__wrapper {
+  padding: 0 20px;
   max-width: 1550px;
   margin: auto;
   -webkit-box-flex: 1;
@@ -745,6 +926,20 @@ ul {
   border-radius: 7.5px;
 }
 
+@media screen and (max-width: 1200px) {
+  .code__wrapper {
+    width: calc(100% - 40px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .code h2 {
+    font-size: 48px;
+    line-height: 30px;
+  }
+  .code__box pre {
+    font-size: 12px;
+  }
+}
 .contacts {
   min-height: 100vh;
   display: -webkit-box;
@@ -752,6 +947,7 @@ ul {
   display: flex;
 }
 .contacts__wrapper {
+  padding: 0 20px;
   max-width: 1550px;
   margin: auto;
   -webkit-box-flex: 1;
@@ -786,6 +982,19 @@ ul {
           filter: invert(82%) sepia(54%) saturate(3358%) hue-rotate(3deg) brightness(128%) contrast(92%);
 }
 
+@media screen and (max-width: 768px) {
+  .contacts__wrapper ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 40px;
+  }
+  .contacts__wrapper h2 {
+    font-size: 48px;
+  }
+  .contacts__wrapper h4 {
+    font-size: 34px;
+  }
+}
 .footer {
   background: rgb(16, 16, 16);
 }
@@ -811,6 +1020,16 @@ ul {
   color: #FFD000;
 }
 
+@media screen and (max-width: 768px) {
+  .footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 180px;
+    padding: 15px 0;
+  }
+}
 .tr-delay-1 {
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
