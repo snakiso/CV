@@ -76,4 +76,8 @@ var $containers = $('[data-animation]:not([data-animation-child]), [data-animati
 $('[data-animation-start]').scrollAnimations({ //новый дата атрибут меняет триггер срабатывания анимации
  offset: 0.1
 });
+
+$('[data-animation-bottom]').scrollAnimations({ //новый дата атрибут меняет триггер срабатывания анимации
+ offset: 0.8
+});
 $containers.scrollAnimations();

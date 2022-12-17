@@ -34,6 +34,9 @@
             <li class="list-item"><a href="tel:+375333908447"><img src="./img/phone.svg" alt=""></a></li>
           </ul>
         </nav>
+        <div class="burger-box">
+          <span class="burger"></span>
+        </div>
       </div>
     </header>
     <section class="preview" id="preview">
@@ -53,41 +56,43 @@
     </section>
     <section class="about" id="about">
       <div class="about__content">
-          <div class="about__ava">
-            <div class="about__bg">
-              <div data-animation-container class="nickname" data-animation-start>
-                <p data-animation-child class="slide-left">S</p>
-                <p data-animation-child class="slide-right">n</p>
-                <p data-animation-child class="slide-left">a</p>
-                <p data-animation-child class="slide-right ">K</p>
-                <p data-animation-child class="slide-left">i</p>
-                <p data-animation-child class="slide-right">s</p>
-                <p data-animation-child class="slide-left">o</p>
-              </div>
-            </div>
-            <div class="about__photo">
-              <img src="./img/ava.png" alt="">
+        <div class="about__ava">
+          <div class="about__bg">
+            <div data-animation-container class="nickname" data-animation-start>
+              <p data-animation-child class="slide-left">S</p>
+              <p data-animation-child class="slide-right">n</p>
+              <p data-animation-child class="slide-left">a</p>
+              <p data-animation-child class="slide-right ">K</p>
+              <p data-animation-child class="slide-left">i</p>
+              <p data-animation-child class="slide-right">s</p>
+              <p data-animation-child class="slide-left">o</p>
             </div>
           </div>
+          <div class="about__photo">
+            <img src="./img/ava.png" alt="">
+          </div>
+        </div>
         <div class="first-line">
-          <div data-animation-container class="about-block">
+          <div data-animation-container class="about-block" data-animation-bottom>
             <h4 data-animation-child class="slide-left">ABOU<img src="./img/about-letter.svg" alt="">&nbsp ME</h4>
-            <p data-animation-child class="slide-up">I am 25 years old, until recently I worked at a factory, but after trying myself in web development, I
+            <p data-animation-child class="slide-up">I am 25 years old, until recently I worked at a factory, but after
+              trying myself in web development, I
               realized
               that it
               was necessary to move in this direction.</p>
           </div>
-          <div data-animation-container class="about-block">
+          <div data-animation-container class="about-block" data-animation-bottom>
             <h4 data-animation-child class="slide-left">E<img src="./img/education-letter.svg" alt="">UCATION</h4>
             <p data-animation-child class="slide-up">From education, only self-study and paid courses (insert)</p>
           </div>
         </div>
         <div class="second-line">
-          <div data-animation-container class="about-block">
+          <div data-animation-container class="about-block" data-animation-bottom>
             <h4 data-animation-child class="slide-left">H<img src="./img/hobby-letter.svg" alt="">BBY</h4>
-            <p data-animation-child class="slide-up">At the moment, this is my hobby, and Dota 2 and manga are waiting for me in the breaks</p>
+            <p data-animation-child class="slide-up">At the moment, this is my hobby, and Dota 2 and manga are waiting
+              for me in the breaks</p>
           </div>
-          <div data-animation-container class="about-block">
+          <div data-animation-container class="about-block" data-animation-bottom>
             <h4 data-animation-child class="slide-left">L<img src="./img/languages-letter.svg" alt="">NGUAGES</h4>
             <div data-animation-child class="lang__wrapper slide-up">
               <div class="lang-block">
@@ -130,13 +135,15 @@
       <div class="skills__wrapper">
         <h2>Skillset</h2>
         <div class="skills__block">
-          <div data-animation-container class="skill-box">
-            <div class="skill-name"><p>HTML</p></div>
+          <div data-animation-container class="skill-box" data-animation-bottom>
+            <div class="skill-name">
+              <p>HTML</p>
+            </div>
             <div class="skills__progress-zero" data-progress="80%">
               <div data-animation-child class="skills__progress-full" data-animation="slide-progress"></div>
             </div>
           </div>
-          <div data-animation-container class="skill-box">
+          <div data-animation-container class="skill-box" data-animation-bottom>
             <div class="skill-name">
               <p>CSS</p>
             </div>
@@ -144,7 +151,7 @@
               <div data-animation-child class="skills__progress-full" data-animation="slide-progress"></div>
             </div>
           </div>
-          <div data-animation-container class="skill-box">
+          <div data-animation-container class="skill-box" data-animation-bottom>
             <div class="skill-name">
               <p>JS BASICS</p>
             </div>
@@ -152,15 +159,15 @@
               <div data-animation-child class="skills__progress-full" data-animation="slide-progress"></div>
             </div>
           </div>
-          <div data-animation-container class="skill-box">
+          <div data-animation-container class="skill-box" data-animation-bottom>
             <div class="skill-name">
               <p>FIGMA</p>
             </div>
             <div class="skills__progress-zero" data-progress="47%">
-             <div data-animation-child class="skills__progress-full" data-animation="slide-progress"></div>
+              <div data-animation-child class="skills__progress-full" data-animation="slide-progress"></div>
             </div>
           </div>
-          <div data-animation-container class="skill-box">
+          <div data-animation-container class="skill-box" data-animation-bottom>
             <div class="skill-name">
               <p>GITHUB</p>
             </div>
@@ -172,64 +179,69 @@
       </div>
     </section>
     <section class="portfolio" id="portfolio">
-      <div class="portfolio__top-decor">
-        <img src="./img/portfolio-top-decor.png" alt="">
-      </div>
-      <h2>My Projects</h2>
-      <div class="portfolio__alex">
-        <div class="portfolio__box">
-          <div class="portfolio__img">
-            <img src="./img/alexa-1.png" alt="">
-            <a href="https://rolling-scopes-school.github.io/snakiso-JSFEPRESCHOOL/portfolio/" class="button-box" target="_blank"><button>View Work</button></a>
-          </div>
-          <div class="portfolio__content">
-            <div class="portfolio__text">
-              <h4>ALEXA RISE</h4>
-              <p>My first job, in mastering HTML
-                and CSS, outside of courses.
-                It contains only the layout.</p>
+      <div class="portfolio__wrapper">
+        <div class="portfolio__top-decor">
+          <img src="./img/portfolio-top-decor.png" alt="">
+        </div>
+        <h2>My Projects</h2>
+        <div class="portfolio__alex">
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="./img/alexa-1.png" alt="">
+              <a href="https://rolling-scopes-school.github.io/snakiso-JSFEPRESCHOOL/portfolio/" class="button-box"
+                target="_blank"><button>View Work</button></a>
             </div>
-            <div class="portfolio__bg">01</div>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__pear">
-        <div class="portfolio__middle-decor">
-          <img src="./img/portfolio-middle-decor.png" alt="">
-        </div>
-        <div class="portfolio__box">
-          <div class="portfolio__img">
-            <img src="./img/pear-1.png" alt="">
-            <a href="https://snakiso.github.io/PEARAGENCY/" class="button-box" target="_blank"><button>View Work</button></a>
-          </div>
-          <div class="portfolio__content">
-            <div class="portfolio__text">
-              <h4>PEAR AGENCY</h4>
-              <p>My first job, in mastering HTML
-                and CSS, outside of courses.
-                It contains only the layout.</p>
+            <div class="portfolio__content">
+              <div class="portfolio__text">
+                <h4>ALEXA RISE</h4>
+                <p>My first job, in mastering HTML
+                  and CSS, outside of courses.
+                  It contains only the layout.</p>
+              </div>
+              <div class="portfolio__bg">01</div>
             </div>
-            <div class="portfolio__bg">02</div>
           </div>
         </div>
-      </div>
-      <div class="portfolio__project">
-        <div class="portfolio__bottom-decor">
-          <img src="./img/portfolio-bottom-decor.png" alt=""> 
-        </div>
-        <div class="portfolio__box">
-          <div class="portfolio__img">
-            <img src="./img/project -1.png" alt="">
-            <a href="https://snakiso.github.io/PROJECTROOM/index.html" class="button-box" target="_blank"><button>View Work</button></a>
+        <div class="portfolio__pear">
+          <div class="portfolio__middle-decor">
+            <img src="./img/portfolio-middle-decor.png" alt="">
           </div>
-          <div class="portfolio__content">
-            <div class="portfolio__text">
-              <h4>PROJECTROOM</h4>
-              <p>My first job, in mastering HTML
-                and CSS, outside of courses.
-                It contains only the layout.</p>
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="./img/pear-1.png" alt="">
+              <a href="https://snakiso.github.io/PEARAGENCY/" class="button-box" target="_blank"><button>View
+                  Work</button></a>
             </div>
-            <div class="portfolio__bg">03</div>
+            <div class="portfolio__content">
+              <div class="portfolio__text">
+                <h4>PEAR AGENCY</h4>
+                <p>My first job, in mastering HTML
+                  and CSS, outside of courses.
+                  It contains only the layout.</p>
+              </div>
+              <div class="portfolio__bg">02</div>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__project">
+          <div class="portfolio__bottom-decor">
+            <img src="./img/portfolio-bottom-decor.png" alt="">
+          </div>
+          <div class="portfolio__box">
+            <div class="portfolio__img">
+              <img src="./img/project -1.png" alt="">
+              <a href="https://snakiso.github.io/PROJECTROOM/index.html" class="button-box" target="_blank"><button>View
+                  Work</button></a>
+            </div>
+            <div class="portfolio__content">
+              <div class="portfolio__text">
+                <h4>PROJECTROOM</h4>
+                <p>My first job, in mastering HTML
+                  and CSS, outside of courses.
+                  It contains only the layout.</p>
+              </div>
+              <div class="portfolio__bg">03</div>
+            </div>
           </div>
         </div>
       </div>
@@ -290,7 +302,7 @@
       <div class="contacts__wrapper">
         <h2>Contacts</h2>
         <h4>Let's do something impressive.
-        Contact me at <a href="">@snakiso</a></h4>
+          Contact me at <a href="">@snakiso</a></h4>
         <ul>
           <li><a href="#"><img src="./img/insta.svg" alt=""></a></li>
           <li><a href="#"><img src="./img/vk.svg" alt=""></a></li>
@@ -306,7 +318,7 @@
           <a href="#"><img src="./img/logo.svg" alt=""></a>
         </div>
         <div class="design">
-         <a href="#">Design by Lina 2022</a> 
+          <a href="#">Design by Lina 2022</a>
         </div>
         <div class="rs-school-logo">
           <a href="#"><img src="./img/rs-school.svg" alt=""></a>

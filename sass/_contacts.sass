@@ -2,6 +2,7 @@
  min-height: 100vh
  display: flex
  &__wrapper
+  padding: 0 20px
   max-width: 1550px
   margin: auto
   flex: 1
@@ -22,3 +23,14 @@
    column-gap: 40px 
    li:hover 
     filter: invert(82%) sepia(54%) saturate(3358%) hue-rotate(3deg) brightness(128%) contrast(92%)
+
+@media screen and ( max-width: 768px )  
+  .contacts
+    &__wrapper
+      ul
+        flex-wrap: wrap
+        row-gap: 40px
+      h2
+        font-size: 48px
+      h4
+        font-size: 34px      

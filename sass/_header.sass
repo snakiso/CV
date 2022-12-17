@@ -41,3 +41,32 @@
  transform: translateY(0%)
 .headroom--unpinned 
  transform: translateY(-100%)    
+
+.burger-box
+  display: contents
+  height: 40px
+  width: 40px  
+.burger
+  width: 40px
+  height: 3px
+  content: ''
+  right: 40px
+  position: absolute
+  background: white
+.burger:before, .burger:after
+  content: ''
+  position: absolute 
+  width: 40px
+  height: 3px
+  background: white 
+.burger:before
+  top: -10px  
+.burger:after
+  top: 10px  
+
+
+
+
+@media screen and ( max-width: 768px )  
+  .fixed-header__nav
+    display: none    

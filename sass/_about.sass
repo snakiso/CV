@@ -84,7 +84,7 @@
   position: absolute
   max-height: 100vh
   display: flex
-  width: 1550px
+  width: 90%
  &__bg
   width: 260px
   height: 100vh
@@ -109,7 +109,7 @@
   max-width: 370px
   img
    height: 100% 
-   width: 100%
+   width: 150%
  &__decor
   max-height: 85px
   position: absolute
@@ -134,13 +134,54 @@
        .points-block
         p
          height: 24px
-         margin: 20px 0  
+         margin: 20px 0 
+    &__photo
+      img
+        width: 100%      
 
 @media screen and ( max-width: 1500px )  
   .about__ava
-    width: 1200px
+    width: 93%
   .first-line, .second-line
     padding-left: 70% !important 
-@media screen and ( max-width: 1200px )               
+@media screen and ( max-width: 1200px ) 
+  .about__bg 
+    .nickname
+      p
+        font-size: 60px
+        line-height: 140%
+  .about__content
+    max-height: none
+  .about__decor
+    display: none
+  .about__ava
+    justify-content: center
+    position: relative
+  .about__photo
+    left: auto
+    right: 20%  
+  .first-line, .second-line
+    column-gap: 0 !important
+    justify-content: space-around  !important
+    padding: 0  !important
+
+@media screen and ( max-width: 768px )
+  .first-line, .second-line
+    flex-direction: column
+    padding-left: 60px !important
+  .about__ava
+    justify-content: start
+  .about__photo
+    left: 15%
+    right: auto         
+  .about__content
+    h4
+      font-size: 24px
+    p
+      font-size: 14px
+      margin: 25px 0 
+      max-width: 280px 
+
+
 
 

@@ -4,6 +4,7 @@
   &__block
     max-width: 1265px
     margin-left: 16%
+    padding-right: 20px
     position: absolute
     top: 25%
     h3
@@ -38,6 +39,12 @@
    background: rgba(255, 208, 0, 1)
    color: rgba(34, 36, 38, 1)   
 
+
+@media screen and ( max-width: 1500px )  
+  .preview
+    &__block
+      margin-left: 5%  
+
 @media screen and ( max-width: 1200px ) 
   .preview
     display: flex
@@ -50,3 +57,10 @@
         max-width: 400px
       p
         font-size: 28px    
+
+@media screen and ( max-width: 768px )
+  #scene
+    display: none   
+  .preview__block 
+    h3
+      font-size: 24px
