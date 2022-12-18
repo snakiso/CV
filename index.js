@@ -81,3 +81,29 @@ $('[data-animation-bottom]').scrollAnimations({ //новый дата атриб
  offset: 0.8
 });
 $containers.scrollAnimations();
+
+
+//бургер меню
+ let burger = document.querySelector('.burger-box');
+ let mobileNav = document.querySelector('.mobile-nav');
+ let closeNav = document.querySelector('.menu-close');
+
+
+ burger.addEventListener('click', () => {
+  burger.classList.add('active');
+  mobileNav.classList.add('active');
+ })
+
+ closeNav.addEventListener('click', () => {
+  burger.classList.remove('active');
+  mobileNav.classList.remove('active')
+ })
+
+
+document.addEventListener('click', menu)
+function menu(event) {
+ if (!event.target.closest('.burger-box')) {
+  burger.classList.remove('active');
+  mobileNav.classList.remove('active')
+ }
+}

@@ -43,7 +43,7 @@
  transform: translateY(-100%)    
 
 .burger-box
-  display: contents
+  display: none
   height: 40px
   width: 40px  
 .burger
@@ -61,8 +61,10 @@
   background: white 
 .burger:before
   top: -10px  
+  transition: all .3s
 .burger:after
   top: 10px  
+  transition: all .3s
 
 
 
@@ -70,3 +72,8 @@
 @media screen and ( max-width: 768px )  
   .fixed-header__nav
     display: none    
+  .burger-box
+    display: contents
+  .burger-box.active
+    .burger:before, .burger:after
+      top: 0  
