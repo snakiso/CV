@@ -245,12 +245,12 @@ ul {
   position: absolute;
   top: 25%;
 }
-.preview__block h3 {
+.preview__block h1 {
   font-size: 71px;
   font-weight: 200;
   margin: 0;
 }
-.preview__block h3 span {
+.preview__block h1 span {
   background: rgb(255, 208, 0);
   color: #1E1E1E;
   font-weight: 300;
@@ -303,7 +303,7 @@ ul {
     max-width: calc(100% - 80px);
     margin: 0 auto 0 auto;
   }
-  .preview__block h3 {
+  .preview__block h1 {
     font-size: 36px;
     max-width: 400px;
   }
@@ -315,7 +315,7 @@ ul {
   #scene {
     display: none;
   }
-  .preview__block h3 {
+  .preview__block h1 {
     font-size: 24px;
   }
 }
